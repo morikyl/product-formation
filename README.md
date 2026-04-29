@@ -44,6 +44,30 @@ Expected behavior:
 
 ## Installation
 
+### Claude Code (one command)
+
+Clone the Skill into your user-level Skills directory:
+
+```bash
+mkdir -p ~/.claude/skills && git clone https://github.com/morikyl/product-formation.git ~/.claude/skills/product-formation
+```
+
+Then start a new Claude Code session so the Skill metadata is discovered.
+
+To update:
+
+```bash
+git -C ~/.claude/skills/product-formation pull
+```
+
+To uninstall:
+
+```bash
+rm -rf ~/.claude/skills/product-formation
+```
+
+### Manual install (other Skill-aware harnesses)
+
 Copy this folder into your local Skills directory. The installed structure should look like:
 
 ```text
